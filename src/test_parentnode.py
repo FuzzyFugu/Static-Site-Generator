@@ -1,6 +1,7 @@
 import unittest
 
 from htmlnode import ParentNode, LeafNode
+from textnode import TextNode, TextType
 
 
 class TestParentNode(unittest.TestCase):
@@ -47,6 +48,7 @@ class TestParentNode(unittest.TestCase):
             node.to_html(),
             "<h2><b>Bold text</b>Normal text<i>italic text</i>Normal text</h2>",
         )
+
 
 if __name__ == "__main__":
     unittest.main()
